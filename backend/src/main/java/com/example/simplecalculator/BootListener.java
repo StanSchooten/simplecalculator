@@ -1,5 +1,6 @@
 package com.example.simplecalculator;
 
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.event.EventListener;
@@ -20,8 +21,6 @@ public class BootListener {
     @EventListener
     @Transactional
     public void bootListener(ApplicationStartedEvent event) {
-        log.info("Creating DEVELOP seed data...");
-
-        log.info("Created DEVELOP seed data!");
+        log.info("Backend initialized");
     }
 }
