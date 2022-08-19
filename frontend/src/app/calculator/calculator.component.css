@@ -1,0 +1,22 @@
+.calculator-container {
+  left: 50%;
+  top: 20%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.form-container {
+  margin-right: 10px
+}
+
+.history-container {
+  left: 50%;
+  top: 40%;
+  width: 720px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  width: 100%;
+}
