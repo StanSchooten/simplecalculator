@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/calculator")
+@CrossOrigin
 public class SimpleCalculatorController {
     private final CalculationService calculationService;
     private final ResultService resultService;
@@ -25,8 +26,8 @@ public class SimpleCalculatorController {
 
     @PostMapping()
     @Transactional
-    public Result calculate(@RequestBody String calculation) {
-        return calculationService.calculateCalculation(calculation);
+    public double calculate(@RequestBody String calculation) {
+        return calculationService.calculateCalculation(calculation).getResult();
     }
 
     @GetMapping()
